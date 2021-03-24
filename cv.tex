@@ -1,0 +1,88 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+\moderncvstyle{casual}
+\moderncvcolor{black}
+%\usepackage[inner=4cm,outer=2cm]{geometry} %left=4cm,right=2cm would be equivalent
+\usepackage[scale=0.9]{geometry}
+%\usepackage[margin=0.3in]{geometry}
+\usepackage{multicol}
+%\usepackage[pagebackref=false,colorlinks,linkcolor=blue,citecolor=magneta]{hyperref}
+%\hypersetup{bookmarks,bookmarksopen,bookmarksdepth=2}
+\firstname{Anastasiia}
+\familyname{Tsarkova}
+
+\email{ilyshnikova@yandex.ru}
+%\photo[50pt][0.4pt]{photo5}
+
+\begin{document}
+\makecvtitle
+
+\section{Education}
+\cventry{September 2014 -- June 2018}{BS in Applied Mathematics and Information Science}{National Research University Higher School of Economics, Moscow, Russia}{GPA -- 7.73 / 10 (\color{blue} \href{https://drive.google.com/file/d/1jo0wNmUpG3tNjdY4JZqNwLyAL8uNWQpm/view}{transcript}\color{black})}{}{}
+
+\section{Projects}
+
+All projects are stored in git repository: \url{https://github.com/ilyshnikova/}
+\newline
+
+\section{Work experience}
+\cventry{September 2017 -- March 2018}{Software Engineer}{Yandex}{Advertising Services, Group of Product Development}{}{
+	Continued to work in the team, which develops real-time advertisement service.
+}
+\cventry{June 2017 -- August 2017}{Business Intern}{Google}{Trust \& Safety, Gmail Abuse Group}{}{
+  The main tasks of internship: to facilitate the infrastructure, automate the calculation of various statistics with map-reduce job, come up with metrics around precision and recall and create dashboards to monitor abuse.
+	\newline
+	Technologies: C++, Python, SQL
+}
+\cventry{August 2016 -- June 2017}{Software Engineer}{Yandex}{Advertising Services, Real-time Technologies Development Group}{}{
+	Working in a group developed high-load real-time service, which processes a large number of advertisement requests.
+	\newline
+	Responsibilities:
+	    \begin{itemize}
+		    \item{Developing and maintaining product logic and infrastructural components}
+		    \item{Debugging and supporting the service}
+	    \end{itemize}
+	Tasks of real-time advertisement engine I worked on required algorithmic knowledge as well as good time management. Also, it was a useful experience of working in a rather large team and reading a lot of business-oriented code of a huge system.
+  	\newline
+	Technologies: C++, Python, Perl, SQL, gdb
+}
+\cventry{April 2016 -- July 2016}{Software Engineer Intern}{Yandex}{Geo-Informational Services, Real-time Services Group}{}{
+	Implemented testing framework for the geo-service engine, which emulates loaded traffic on any given geographic graph. Took part in some of the infrastructural tasks of real-time search service.
+}
+
+
+\section{Courseworks}
+\cventry{2017--now}{Improvement of Analytical DBMS \color{blue} \href{https://clickhouse.yandex/}{ClickHouse}\color{black}, NRU HSE}{NRU HSE, Diploma Project}{}{}{
+ClickHouse is an open source column-oriented database management system capable of real-time generation of analytical data reports using SQL queries. My role for this project was to solve the following problems:
+		\begin{itemize}
+			\item To outline the possibility to force usage of ClickHouse's MergeTree engine table primary key in analyzing the query conditional, containing 'in'-clause with multiple fields. This feature was implemented and is already in the stable branch.
+			\item To implement conditional computations for logical expressions such as 'and'/'or' operators and build a logic to identify in which cases conditional computations work faster. This part is in development state.
+		\end{itemize}
+		My pull requests can be found \color{blue} \href{https://github.com/yandex/ClickHouse/pulls?q=is\%3Apr+author\%3Ailyshnikova}{here}\color{black}
+}
+
+\cventry{2016--2017}{Statistical Analysis of Financial Data by Means of Machine Learning,}{NRU HSE, Team Project}{}{}{
+		\begin{itemize}
+			\item System of indicative statistical and qualitative analysis, which forecasts efficient investments
+			\item Implemented library, which provides user with easy way to download and analyze financial data from different sources
+			\item Includes human interface to facilitate work for users without programming skills
+		\end{itemize}
+}
+\cventry{2015--2016}{Graphs Analyser Utility}{NRU HSE}{}{}{
+		\begin{itemize}
+			\item Server-based program, which accepts time series points and detects anomalies on data series.
+			\item Works online with complexity $\underline{O}(1)$ on point submission.
+			\item Includes human html interface for controlling algorithms, which work on time series.
+			\item Source code: \url{https://github.com/ilyshnikova/graph-analyzer}
+		\end{itemize}
+}
+
+
+\section{Skills}
+
+\cventry{Programming}{C++, Python, Perl, JavaScript (basic), html, SQL}{}{}{}{}
+\cventry{ML tools}{Pandas, NumPy, SciPy, scikit-learn, matplotlib, Apache Spark, Keras, Vowpal Wabbit, word2vec}{}{}{}{}
+\cventry{Other tools}{linux, mac os, git, svn, deb packages, gdb, pdb, vim, flask, nginx}{}{}{}{}
+\cventry{Languages}{Russian,English}{}{}{}{}
+
+\end{document}
+
